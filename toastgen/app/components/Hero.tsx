@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-violet-600 via-purple-400 to-indigo-900">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-violet-600 via-purple-900 to-indigo-900">
       <div className="absolute inset-0 bg-pattern opacity-10"></div>
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white px-4 py-16">
