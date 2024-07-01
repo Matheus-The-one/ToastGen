@@ -10,7 +10,7 @@ const NavBar = () => {
 
   const NAV_LINKS = [
     { href: "/", label: "უახლესი" },
-    { href: "/", label: "How Hilink Work?" },
+    { href: "/", label: "ჩამონათვალი" },
     { href: "/services", label: "Services" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact Us" },
