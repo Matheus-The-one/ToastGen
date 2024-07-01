@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Lists = () => {
+const ToastOrder = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Lists = () => {
   )
 }
 
-export default Lists
+export default ToastOrder
