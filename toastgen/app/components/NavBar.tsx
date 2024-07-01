@@ -11,9 +11,9 @@ const NavBar = () => {
   const NAV_LINKS = [
     { href: "/", label: "უახლესი" },
     { href: "/", label: "ჩამონათვალი" },
-    { href: "/services", label: "რენდომაიზერი" },
-    { href: "/pricing", label: "შეეჯიბრე" },
-    { href: "/contact", label: "ატვირთე" },
+    { href: "/", label: "რენდომაიზერი" },
+    { href: "/", label: "შეეჯიბრე" },
+    { href: "/", label: "ატვირთე" },
   ]
 
   return (
