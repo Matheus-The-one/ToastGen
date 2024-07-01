@@ -10,11 +10,11 @@ const NavBar = () => {
 
   const NAV_LINKS = [
     { href: "/", label: "უახლესი" },
-    { href: "/", label: "ჩამონათვალი" },
-    { href: "/", label: "რენდომაიზერი" },
-    { href: "/", label: "შეეჯიბრე" },
-    { href: "/", label: "ატვირთე" },
-  ]
+    { href: "/toastorder", label: "ჩამონათვალი" },
+    { href: "/randomizer", label: "რენდომაიზერი" },
+    { href: "/join", label: "შეეჯიბრე" },
+    { href: "/upload", label: "ატვირთე" },
+  ];
 
   return (
     <nav className="bg-purple-900 text-white shadow-lg">
