@@ -12,8 +12,8 @@ const NavBar = () => {
     { href: "/", label: "უახლესი" },
     { href: "/", label: "ჩამონათვალი" },
     { href: "/services", label: "რენდომაიზერი" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/pricing", label: "შეეჯიბრე" },
+    { href: "/contact", label: "ატვირთე" },
   ]
 
   return (
