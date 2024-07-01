@@ -9,8 +9,8 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const NAV_LINKS = [
-    { href: "/", label: "Home" },
-    { href: "/how-hilink-work", label: "How Hilink Work?" },
+    { href: "/", label: "უახლესი" },
+    { href: "/", label: "How Hilink Work?" },
     { href: "/services", label: "Services" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact Us" },
