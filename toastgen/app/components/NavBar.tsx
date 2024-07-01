@@ -11,7 +11,7 @@ const NavBar = () => {
   const NAV_LINKS = [
     { href: "/", label: "უახლესი" },
     { href: "/", label: "ჩამონათვალი" },
-    { href: "/services", label: "Services" },
+    { href: "/services", label: "რენდომაიზერი" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact Us" },
   ]
