@@ -67,11 +67,11 @@ const UploadCard: React.FC = () => {
 
       {/* Grapes illustrations outside of the card */}
       <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
-        <Grapes className="w-32 h-32 text-purple-400" />
+        <img src='/images/grp.png'className=" w-32 h-34 text-purple-400 rounded" />
       </div>
-      <div className="absolute right-10 top-1/2 transform -translate-y-1/2">
-        <Grapes className="w-32 h-32 text-indigo-400" />
-      </div>
+      {/* <div className="absolute right-10 top-1/2 transform -translate-y-1/2">
+        <img src='/images/grp.png'  className="w-24 h-38 text-indigo-400 rounded" />
+      </div> */}
     </div>
   );
 };
