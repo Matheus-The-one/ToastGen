@@ -4,20 +4,13 @@ import Grapes from './Grapes';
 
 const UploadCard: React.FC = () => {
   return (
-    <div className="relative flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-900 via-black to-gray-900 p-4">
-      <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-gray-200 p-10 rounded-3xl shadow-2xl max-w-md w-full border border-purple-600 overflow-hidden">
+    <div className="relative flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-900 via-black to-gray-900 p-4 overflow-hidden">
+      <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-gray-200 p-10 rounded-3xl shadow-2xl max-w-md w-full border border-purple-600">
         <div className="absolute top-0 left-0 w-full h-full bg-purple-600 opacity-20 mix-blend-multiply animate-pulse-slow"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-indigo-600 opacity-20 mix-blend-multiply animate-pulse-slow-reverse"></div>
         <div className="absolute -top-20 -left-20 w-40 h-40 bg-purple-500 rounded-full opacity-10 animate-spin-slow"></div>
         <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-indigo-500 rounded-full opacity-10 animate-spin-slow-reverse"></div>
 
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-          <Grapes className="w-32 h-32 animate-bounce text-purple-400" />
-        </div>
-        <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-          <Grapes className="w-32 h-32 animate-bounce text-indigo-400" />
-        </div>
-        
         <h2 className="text-4xl font-extrabold mb-8 text-center text-purple-400 drop-shadow-md">ატვირთე შენი სადღეგრძელო</h2>
         <form className="space-y-6 relative">
           <div>
@@ -71,8 +64,17 @@ const UploadCard: React.FC = () => {
           </div>
         </form>
       </div>
+
+      {/* Grapes illustrations outside of the card */}
+      <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
+        <Grapes className="w-32 h-32 text-purple-400" />
+      </div>
+      <div className="absolute right-10 top-1/2 transform -translate-y-1/2">
+        <Grapes className="w-32 h-32 text-indigo-400" />
+      </div>
     </div>
   );
 };
 
 export default UploadCard;
+
