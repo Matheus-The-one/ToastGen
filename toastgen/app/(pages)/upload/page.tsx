@@ -1,9 +1,12 @@
 import React from 'react'
+import UploadCard from './UploadCard'
+
+
 
 const page = () => {
   return (
-    <div>
-      hello world
+    <div className='text-white'>
+      <UploadCard />
     </div>
   )
 }
