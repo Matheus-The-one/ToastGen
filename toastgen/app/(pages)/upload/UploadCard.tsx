@@ -5,7 +5,7 @@ const UploadCard: React.FC = () => {
   return (
     <div className="relative flex flex-col md:flex-row justify-center items-center min-h-screen bg-gradient-to-r from-gray-900 via-black to-gray-900 p-4 overflow-hidden">
       {/* Image on the left */}
-      <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+      <div className="w-full  md:w-1/2 mb-8 md:mb-0 md:pr-8">
         <img src='/images/comic.png' className="w-full max-w-2xl mx-auto rounded-lg shadow-lg" alt="Comic illustration" />
       </div>
 
