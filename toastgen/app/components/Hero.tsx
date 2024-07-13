@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
           
           <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-3000 shadow-lg animate-pulse transform hover:scale-105 font-bold text-xl comic-button">
-            EXPLORE SAPERAVI
+           შექმენი სადღეგრძელო
           </button>
         </div>
       </div>
