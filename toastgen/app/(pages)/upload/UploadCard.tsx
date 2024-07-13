@@ -34,7 +34,7 @@ const UploadCard: React.FC = () => {
                   <option>მეგობრობა</option>
                   <option>ოჯახი</option>
                   <option>სიყვარული</option>
-                  <option>სამუშაო</option>
+                  <option>მშობლები</option>
                   {/* Add more options as needed */}
                 </select>
               </div>
