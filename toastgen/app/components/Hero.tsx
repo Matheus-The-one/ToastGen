@@ -3,51 +3,57 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-violet-600 via-purple-900 to-indigo-900">
-      <div className="absolute inset-0 bg-pattern opacity-10"></div>
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-black">
+      <div className="absolute inset-0 bg-comic-pattern opacity-5"></div>
       
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white px-4 py-16">
-        <h1 className="mb-6 text-4xl md:text-6xl lg:text-7xl font-bold text-center animate-fade-in-down text-purple-100 leading-tight">
-          Discover the Art of <br className="hidden sm:block" />Georgian Wine
-        </h1>
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between min-h-screen text-white px-4 py-16 max-w-7xl mx-auto">
+        {/* Left side with grape character */}
+        <div className="md:w-1/2 mb-8 md:mb-0 relative">
+          <div className="animate-bounce-slow">
+            <Image 
+              src="/images/grapee.png" 
+              alt="Grape Character" 
+              width={600} 
+              height={600} 
+              className="filter drop-shadow-xl"
+            />
+          </div>
+          <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 rotate-12">
+            <span className="text-6xl animate-pulse">🍇</span>
+          </div>
+        </div>
         
-        <p className="mb-8 text-lg md:text-xl text-center max-w-2xl animate-fade-in-up text-purple-200">
-          Immerse yourself in centuries of tradition and taste the essence of Georgia's rich winemaking heritage.
-        </p>
-        
-        <div className="relative w-full max-w-md animate-fade-in-up mb-8">
-          <input 
-            type="text" 
-            placeholder="Enter your favorite wine..."
-            className="w-full px-6 py-4 text-lg text-purple-900 bg-purple-100 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-lg"
-          />
-          <button className="absolute right-2 top-1/2 transform -translate-y-1/2 px-6 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-full hover:from-purple-700 hover:to-indigo-700 transition duration-300 shadow-md">
-            Generate
+        {/* Right side with text and CTA */}
+        <div className="md:w-1/2 text-center md:text-left">
+          <h1 className="mb-6 text-5xl md:text-7xl font-bold leading-tight text-shadow-pop">
+            <span className="block transform hover:scale-110 transition duration-300 text-purple-300">აღმოაჩინე</span>
+            <span className="block transform hover:scale-110 transition duration-300 text-purple-200">სადღეგრძელოები</span>
+            <span className="block transform hover:scale-110 transition duration-300 text-purple-100">DgeGrdzelze</span>
+          </h1>
+          
+          <p className="mb-8 text-xl md:text-2xl max-w-2xl animate-pulse text-purple-200 comic-text-outline">
+            ავტირთე,შეაფასე,ისწავლე,დააგენერირე,შეიყვარე ქართული სადღეგრძელოები ჩვენს პლათფორმაზე
+          </p>
+          
+          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-3000 shadow-lg animate-pulse transform hover:scale-105 font-bold text-xl comic-button">
+            EXPLORE SAPERAVI
           </button>
         </div>
-
-        <div className="flex space-x-4 animate-fade-in-up">
-          <button className="px-6 py-3 bg-black text-white rounded-full hover:bg-violet-900 transition duration-300 shadow-md">
-            Explore Wines
-          </button>
-          <button className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-purple-900 transition duration-300 shadow-md">
-            Learn More
-          </button>
-        </div>
       </div>
       
-      <div className="absolute top-1/4 right-0 w-1/4 md:w-1/5 animate-float-delayed hidden md:block">
-        <Image src="/wine1.png" alt="Wine Glass" width={200} height={200} className="w-full bg-none rounded-full filter drop-shadow-lg" />
+      {/* Decorative elements */}
+      <div className="absolute top-10 right-10 animate-spin-slow hidden md:block">
+        <Image src="/wine1.png" alt="Wine Glass" width={100} height={100} className="filter invert" />
       </div>
       
-      
-      
-      <div className="absolute top-1/3 left-1/4 w-16 h-16 animate-pulse hidden lg:block">
-        <div className="w-full h-full bg-purple-400 rounded-full opacity-50"></div>
+      <div className="absolute bottom-10 left-10 animate-bounce-slow hidden md:block">
+        <Image src="/wine1.png" alt="Wine Bottle" width={80} height={200} className="filter invert" />
       </div>
       
-      <div className="absolute bottom-1/4 right-1/3 w-24 h-24 animate-bounce hidden lg:block">
-        <div className="w-full h-full border-4 border-purple-300 rounded-full opacity-50"></div>
+      <div className="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 70C840 80 960 100 1080 110C1200 120 1320 120 1380 120H1440V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0V120Z" fill="rgba(139,92,246,0.2)"/>
+        </svg>
       </div>
     </div>
   );
