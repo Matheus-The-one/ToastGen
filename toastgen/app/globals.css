@@ -59,7 +59,7 @@
 }
 
 .comic-text-outline {
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px 1px 1px 1px rgb(208, 199, 199);
 }
 
 .comic-button {

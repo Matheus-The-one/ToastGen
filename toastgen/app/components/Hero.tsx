@@ -35,7 +35,7 @@ const Hero = () => {
             ავტირთე, შეაფასე, ისწავლე, დააგენერირე, შეიყვარე ქართული სადღეგრძელოები ჩვენს პლათფორმაზე
           </p>
           
-          <button className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-300 shadow-lg animate-pulse transform hover:scale-105 font-bold text-lg md:text-xl comic-button">
+          <button className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-3000 shadow-lg animate-pulse transform hover:scale-105 font-bold text-lg md:text-xl comic-button">
             შექმენი სადღეგრძელო
           </button>
         </div>
