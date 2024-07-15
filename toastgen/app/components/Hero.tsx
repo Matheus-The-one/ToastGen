@@ -10,33 +10,33 @@ const Hero = () => {
         {/* Left side with grape character */}
         <div className="md:w-1/2 mb-8 md:mb-0 relative">
           <div className="animate-bounce-slow">
-            <Image 
-              src="/images/grapee.png" 
-              alt="Grape Character" 
-              width={600} 
-              height={600} 
-              className="filter drop-shadow-xl"
+            <Image
+              src="/images/grapee.png"
+              alt="Grape Character"
+              width={600}
+              height={600}
+              className="filter drop-shadow-xl max-w-full h-auto"
             />
           </div>
           <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 rotate-12">
-            <span className="text-6xl animate-pulse">🍇</span>
+            <span className="text-4xl md:text-6xl animate-pulse">🍇</span>
           </div>
         </div>
         
         {/* Right side with text and CTA */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="mb-6 text-5xl md:text-7xl font-bold leading-tight text-shadow-pop">
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold leading-tight text-shadow-pop">
             <span className="block transform hover:scale-110 transition duration-300 text-purple-300">აღმოაჩინე</span>
             <span className="block transform hover:scale-110 transition duration-300 text-purple-200">სადღეგრძელოები</span>
             <span className="block transform hover:scale-110 transition duration-300 text-purple-100">DgeGrdzelze</span>
           </h1>
           
-          <p className="mb-8 text-xl md:text-2xl max-w-2xl animate-pulse text-purple-200 comic-text-outline">
-            ავტირთე,შეაფასე,ისწავლე,დააგენერირე,შეიყვარე ქართული სადღეგრძელოები ჩვენს პლათფორმაზე
+          <p className="mb-8 text-lg md:text-xl max-w-2xl animate-pulse text-purple-200 comic-text-outline">
+            ავტირთე, შეაფასე, ისწავლე, დააგენერირე, შეიყვარე ქართული სადღეგრძელოები ჩვენს პლათფორმაზე
           </p>
           
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-3000 shadow-lg animate-pulse transform hover:scale-105 font-bold text-xl comic-button">
-           შექმენი სადღეგრძელო
+          <button className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition duration-300 shadow-lg animate-pulse transform hover:scale-105 font-bold text-lg md:text-xl comic-button">
+            შექმენი სადღეგრძელო
           </button>
         </div>
       </div>
