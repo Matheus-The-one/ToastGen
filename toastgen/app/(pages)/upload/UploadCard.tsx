@@ -22,14 +22,14 @@ const UploadCard: React.FC = () => {
             <div>
               <label className="block text-sm font-medium mb-2 text-violet-300">სახელი</label>
               <div className="relative">
-                <FaExclamationCircle className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
+                <img src='/images/name.png' width={20} height={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
                 <input type="text" className="w-full bg-gray-800 rounded-xl p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-700"/>
               </div>
             </div>
             <div>
               <label className="block text-sm font-medium mb-2 text-violet-300">კატეგორია</label>
               <div className="relative">
-                <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
+                <img src='/images/category.png' width={20} height={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
                 <select className="w-full bg-gray-800 rounded-xl p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-700">
                   <option>მეგობრობა</option>
                   <option>ოჯახი</option>
@@ -42,7 +42,7 @@ const UploadCard: React.FC = () => {
             <div>
               <label className="block text-sm font-medium mb-2 text-violet-300">წინასიტყვაობა</label>
               <div className="relative">
-                <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
+                <img src='/images/description.png' width={20} height={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
                 <input 
                   type="text" 
                   placeholder="თუ წინასიტყვაობა აქვს" 
@@ -53,7 +53,7 @@ const UploadCard: React.FC = () => {
             <div>
               <label className="block text-sm font-medium mb-2 text-violet-300">სადღეგრძელო</label>
               <div className="relative">
-                <FaFileAlt className="absolute left-3 top-3 text-purple-400" />
+                <img src='/images/toast.png' width={35} height={35} className="absolute left-1 top-3 text-purple-400" />
                 <textarea 
                   placeholder="დაამატე სადღეგრძელო" 
                   className="w-full bg-gray-800 rounded-xl p-3 pl-10 h-32 focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-700 placeholder-gray-500"
