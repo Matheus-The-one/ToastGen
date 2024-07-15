@@ -17,7 +17,7 @@ const UploadCard: React.FC = () => {
           <div className="absolute -top-20 -left-20 w-40 h-40 bg-purple-500 rounded-full opacity-10 animate-spin-slow"></div>
           <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-indigo-500 rounded-full opacity-10 animate-spin-slow-reverse"></div>
 
-          <h2 className="text-4xl font-extrabold mb-8 text-center text-purple-400 drop-shadow-md">ატვირთე შენი სადღეგრძელო</h2>
+          <h2 className="text-4xl font-extrabold mb-8 text-center text-white  text-shadow-pop">ატვირთე შენი სადღეგრძელო</h2>
           <form className="space-y-6 relative">
             <div>
               <label className="block text-sm font-medium mb-2 text-violet-300">სახელი</label>
@@ -27,7 +27,7 @@ const UploadCard: React.FC = () => {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2 text-violet-300">კატეგორია</label>
+              <label className="block text-sm font-medium mb-2 text-violet-300 text-shadow-pop">კატეგორია</label>
               <div className="relative">
                 <img src='/images/category.png' width={20} height={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
                 <select className="w-full bg-gray-800 rounded-xl p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-700">
@@ -40,7 +40,7 @@ const UploadCard: React.FC = () => {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2 text-violet-300">წინასიტყვაობა</label>
+              <label className="block text-sm font-medium mb-2 text-shadow-pop text-violet-300">წინასიტყვაობა</label>
               <div className="relative">
                 <img src='/images/description.png' width={20} height={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-purple-400" />
                 <input 
@@ -51,7 +51,7 @@ const UploadCard: React.FC = () => {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2 text-violet-300">სადღეგრძელო</label>
+              <label className="block text-sm font-medium mb-2 text-shadow-pop text-violet-300">სადღეგრძელო</label>
               <div className="relative">
                 <img src='/images/toast.png' width={35} height={35} className="absolute left-1 top-3 text-purple-400" />
                 <textarea 
@@ -61,10 +61,10 @@ const UploadCard: React.FC = () => {
               </div>
             </div>
             <div className="flex justify-between pt-6">
-              <button className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded-xl transition duration-300 ease-in-out border border-purple-600">
+              <button className="bg-gray-700 hover:bg-gray-600 text-shadow-pop text-white px-6 py-2 rounded-xl transition duration-300 ease-in-out border border-purple-600">
                 დახურვა
               </button>
-              <button className="bg-purple-600 hover:bg-purple-500 text-white px-6 py-2 rounded-xl transition duration-300 ease-in-out">
+              <button className="bg-purple-600 hover:bg-purple-500 text-shadow-pop text-white px-6 py-2 rounded-xl transition duration-300 ease-in-out">
                 ატვირთვა
               </button>
             </div>
